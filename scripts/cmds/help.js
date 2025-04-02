@@ -59,9 +59,9 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\ CONTACT 𝑀𝐸𝑆𝑆𝐼𝐸 𝑂𝑆𝐴𝑁𝐺𝑂  page   FACEBOOK: 
+      msg += `\ CONTACT ʚɸɞ ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ ʚɸɞ  page   FACEBOOK: 
 
-https://www.facebook.com/profile.php?id=61568305950691  
+https://www.facebook.com/profile.php?id=61571108972404  
 \n`;
 
       msg += ` | ʚɸɞ ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ ʚɸɞ ✯ |`; // Voici la liste de mes cmds.
