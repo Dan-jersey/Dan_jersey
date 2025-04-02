@@ -44,13 +44,13 @@ module.exports = {
 
         let response;
         if (input.toLowerCase() === "ai") {
-            response = "𝑆𝐴𝐿𝑈𝑇 𝐽𝐸 𝑆𝑈𝐼𝑆 𝐿'𝑖𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑐𝑒 𝐴𝑅𝑇𝐼𝐹𝐼𝐸𝐿𝐿𝐸 𝐶𝑅ÉÉ 𝑃𝐴𝑅 𝑀𝐸𝑆𝑆𝐼𝐸 𝑂𝑆𝐴𝑁𝐺𝑂 !";
+            response = "𝐖𝐞𝐬𝐡 𝐛𝐫𝐨 𝐣𝐞 𝐬𝐮𝐢𝐬 𝐥𝐚̀ 𝐩𝐨𝐬𝐞 𝐭𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 𝐯𝐢𝐭𝐞 !";
         } else {
             const aiResponse = await getAIResponse(input, event.senderID, event.messageID);
             response = aiResponse.response;
         }
 
-        api.sendMessage(`MESSIE OSANGO' \n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, event.messageID);
+        api.sendMessage(`DAN JERSEY' \n━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━`, event.threadID, event.messageID);
     },
     onChat: async function ({ event, message }) {
         const messageContent = event.body.trim();
@@ -58,13 +58,13 @@ module.exports = {
 
         let response;
         if (messageContent.toLowerCase() === "ai") {
-            response = "𝑆𝐴𝐿𝑈𝑇 𝐽𝐸 𝑆𝑈𝐼𝑆 𝐿'𝑖𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑐𝑒 𝐴𝑅𝑇𝐼𝐹𝐼𝐸𝐿𝐿𝐸 𝐶𝑅ÉÉ 𝑃𝐴𝑅 𝑀𝐸𝑆𝑆𝐼𝐸 𝑂𝑆𝐴𝑁𝐺𝑂 !";
+            response = "𝐖𝐞𝐬𝐡 𝐛𝐫𝐨 𝐣𝐞 𝐬𝐮𝐢𝐬 𝐥𝐚̀ 𝐩𝐨𝐬𝐞 𝐭𝐚 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧 𝐯𝐢𝐭𝐞 !";
         } else {
             const input = messageContent.replace(/^ai\s*/i, "").trim();
             const aiResponse = await getAIResponse(input, event.senderID, message.messageID);
             response = aiResponse.response;
         }
 
-        message.reply(`𝑆𝐴𝑇𝑂𝑅𝑈 𝐺𝑂𝐽𝑂  𝐵𝑂𝑇✫༒\n________________________________________\n${response}\n________________________`);
+        message.reply(`ʚɸɞ ᎠᎯᏁ ᏠᎬᏒᏕᎬᎽ ʚɸɞ\n________________________________________\n${response}\n________________________`);
     }
 };
